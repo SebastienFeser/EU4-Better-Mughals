@@ -1,0 +1,49 @@
+country_decisions = {
+	the_return_to_zion = {
+		major = yes
+
+		potential = {
+			tag = MUG
+			religion = confucianism
+			NOT = { has_country_flag = return_to_zion_done }
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = syria_area
+				area = palestine_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		allow = {
+			religion = confucianism
+			syria_area = {
+				type = all
+				owned_by = ROOT
+			}
+			palestine_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			syria_area = {
+				change_religion = jewish
+			}
+			palestine_area = {
+				change_religion = jewish
+			}
+			add_country_modifier = {
+				name = return_to_zion_modifier
+				duration = -1
+			}
+			set_country_flag = return_to_zion_done
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

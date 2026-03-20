@@ -1,0 +1,3 @@
+return_to_zion_modifier = {
+	global_unrest = -2
+}
