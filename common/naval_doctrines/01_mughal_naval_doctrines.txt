@@ -1,0 +1,24 @@
+mughal_indian_ocean_trade = {
+	can_select = {
+		is_primitive = no
+		NOT = { has_country_flag = unlock_norwegian_naval_doctrine }
+		OR = {
+			tag = MUG
+			tag = TIM
+			culture_group = iranian
+			primary_culture = turkmeni
+			primary_culture = uzbehk
+			primary_culture = kirgiz
+		}
+	}
+
+	cost = 0.1
+	country_modifier = {
+		global_ship_trade_power = 0.20
+		galley_power = 0.15
+	}
+	effect = {}
+	removed_effect = {}
+
+	button_gfx = 30
+}
